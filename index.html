@@ -13,8 +13,7 @@
     --teal-glow: rgba(0,255,224,0.18);
     --purple: #b44fff;
     --purple-glow: rgba(180,79,255,0.18);
-    --green: #aaff00;
-    --green-glow: rgba(170,255,0,0.15);
+
     --bg: #050508;
     --card-bg: #0b0b14;
     --border: #1a1a2e;
@@ -38,7 +37,7 @@
   .site-header {
     background: #000;
     border-bottom: 2px solid transparent;
-    border-image: linear-gradient(90deg, var(--teal), var(--green), var(--purple)) 1;
+    border-image: linear-gradient(90deg, var(--teal), var(--purple)) 1;
     padding: 18px 24px 14px;
   }
 
@@ -55,14 +54,14 @@
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    border: 2px solid var(--green);
+    border: 2px solid var(--teal);
     overflow: hidden;
     flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     background: #000;
-    box-shadow: 0 0 14px rgba(170,255,0,0.25);
+    box-shadow: 0 0 14px rgba(0,255,224,0.2);
   }
 
   .logo-badge img {
@@ -77,7 +76,7 @@
     font-style: italic;
     font-weight: 800;
     font-size: 22px;
-    background: linear-gradient(135deg, var(--teal), var(--green), var(--purple));
+    background: linear-gradient(135deg, var(--teal), var(--purple));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -91,7 +90,7 @@
     font-style: italic;
     font-weight: 800;
     font-size: clamp(26px, 5vw, 38px);
-    background: linear-gradient(90deg, var(--teal) 0%, var(--green) 50%, var(--purple) 100%);
+    background: linear-gradient(90deg, var(--teal) 0%, var(--purple) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -160,7 +159,7 @@
   }
 
   #search::placeholder { color: var(--muted); }
-  #search:focus { border-color: var(--green); }
+  #search:focus { border-color: var(--teal); }
 
   .filter-row {
     display: flex;
@@ -194,16 +193,16 @@
     white-space: nowrap;
   }
 
-  .cat-btn:hover { border-color: var(--green); color: var(--green); }
+  .cat-btn:hover { border-color: var(--teal); color: var(--teal); }
 
   .cat-btn.active {
-    background: var(--green-glow);
-    border-color: var(--green);
-    color: var(--green);
+    background: var(--teal-glow);
+    border-color: var(--teal);
+    color: var(--teal);
   }
 
   .cat-btn[data-cat="all"].active {
-    background: linear-gradient(135deg, var(--teal-glow), var(--green-glow), var(--purple-glow));
+    background: linear-gradient(135deg, var(--teal-glow), var(--purple-glow));
     border-color: var(--purple);
     color: var(--white);
   }
@@ -240,9 +239,9 @@
   }
 
   .product-card:hover {
-    border-color: var(--green);
+    border-color: var(--teal);
     transform: translateY(-2px);
-    box-shadow: 0 4px 20px rgba(170,255,0,0.08);
+    box-shadow: 0 4px 20px rgba(0,255,224,0.08);
   }
 
   .card-img-wrap {
@@ -324,7 +323,7 @@
     font-family: 'Space Mono', monospace;
     font-size: 15px;
     font-weight: 700;
-    color: var(--green);
+    color: var(--teal);
   }
 
   .price-retail {
@@ -400,21 +399,6 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #030a08;
-  }
-
-  .footer-green {
-    flex: 1;
-    background: var(--green);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 20px;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 700;
-    font-size: 13px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #0a1400;
   }
 
   .footer-purple {
@@ -502,7 +486,6 @@
 <!-- FOOTER -->
 <footer class="site-footer">
   <div class="footer-teal">WP Glass Co.</div>
-  <div class="footer-green">Glass &amp; Smokeware Curations</div>
   <div class="footer-purple">Est. 2025</div>
 </footer>
 
